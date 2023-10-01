@@ -1,0 +1,13 @@
+
+@use 'abstracts/variables';
+
+
+.center-item{
+    align-items: variables.$center;
+}
+.text-center{
+    text-align: variables.$center;
+}
+.justify-content-center{
+    justify-content: variables.$center;
+}

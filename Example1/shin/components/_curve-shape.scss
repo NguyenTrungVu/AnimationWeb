@@ -1,0 +1,45 @@
+@use "abstracts/variables";
+
+.curve-1 {
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+    line-height: 0;
+    svg{
+        position: relative;
+        display: block;
+        width: calc(160% + 1.3px);
+        height: 177px;
+    }
+    .shape-fill{
+        fill: variables.$F45050;
+    }
+}
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .layer1 {
+    background-image: url('../shin/svg/layer-1.svg');
+  }
+  .layer2{
+    background-image: url('../shin/svg/layer-2.svg');
+  }
+  .blob-motion {
+    position: absolute;
+    transform: translateY(-20%);
+    z-index: 0;
+  }
+
+  .blob-content {
+    z-index: 1;
+  }
+
+  .blobs {
+    width: 100%;
+    background: url('../shin/svg/blobs.svg') no-repeat bottom / cover;
+  }
